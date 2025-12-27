@@ -216,7 +216,10 @@ body {
 }
 
 /* Particles.js Network Background */
-#particles-js {
+#particles-js,
+#particles-stats,
+#particles-packages,
+#particles-benefits {
     position: absolute;
     top: 0;
     left: 0;
@@ -468,19 +471,8 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-        radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.04) 0%, transparent 1.5%),
-        radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.04) 0%, transparent 1.5%),
-        radial-gradient(circle at 45% 65%, rgba(255, 255, 255, 0.04) 0%, transparent 1.5%),
-        radial-gradient(circle at 75% 85%, rgba(255, 255, 255, 0.04) 0%, transparent 1.5%),
-        radial-gradient(circle at 25% 75%, rgba(255, 255, 255, 0.04) 0%, transparent 1.5%),
-        radial-gradient(circle at 95% 45%, rgba(255, 255, 255, 0.04) 0%, transparent 1.5%),
-        radial-gradient(circle at 5% 55%, rgba(255, 255, 255, 0.04) 0%, transparent 1.5%),
-        radial-gradient(circle at 55% 15%, rgba(255, 255, 255, 0.04) 0%, transparent 1.5%),
-        radial-gradient(circle at 35% 35%, rgba(255, 215, 0, 0.03) 0%, transparent 2%),
-        radial-gradient(circle at 65% 55%, rgba(255, 215, 0, 0.03) 0%, transparent 2%),
-        radial-gradient(ellipse at 30% 20%, rgba(26, 35, 126, 0.4) 0%, transparent 50%),
-        radial-gradient(ellipse at 70% 80%, rgba(13, 20, 66, 0.3) 0%, transparent 50%);
+    background: radial-gradient(ellipse at 30% 20%, rgba(26, 35, 126, 0.4) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(13, 20, 66, 0.3) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
 }
@@ -2629,6 +2621,395 @@ section.visible .section-header {
 /* Parallax-like effect on scroll (subtle) */
 .hero::before {
     transition: transform 0.1s linear;
+}
+
+/* ===== COMPREHENSIVE MOBILE RESPONSIVE STYLES ===== */
+
+/* Tablet & Below */
+@media (max-width: 1024px) {
+    .navbar .container {
+        padding: 0 2rem;
+    }
+    
+    .nav-menu {
+        margin-left: 2rem;
+        gap: 0;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-sponsor {
+        padding: 0.6rem 1.2rem !important;
+        font-size: 0.85rem;
+    }
+    
+    .hero {
+        padding: 4rem 0 3rem;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile Landscape & Below */
+@media (max-width: 768px) {
+    /* Mobile Navigation */
+    .navbar .container {
+        padding: 0 1.5rem;
+    }
+    
+    .nav-toggle {
+        display: flex;
+        z-index: 1001;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background: rgba(10, 14, 39, 0.98);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 6rem 2rem 2rem;
+        margin: 0;
+        overflow-y: auto;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+        border-radius: var(--radius-md);
+        width: 100%;
+    }
+    
+    .btn-sponsor {
+        margin-top: 1rem;
+        padding: 1rem 2rem !important;
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Hero Section Mobile */
+    .hero {
+        padding: 3rem 0 2rem;
+        min-height: auto;
+    }
+    
+    .hero .container {
+        padding: 0 1.5rem;
+    }
+    
+    .hero-logo img {
+        height: 100px !important;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.95rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .hero-stat {
+        padding: 1rem;
+    }
+    
+    .hero-stat-number {
+        font-size: 2rem;
+    }
+    
+    .hero-stat-label {
+        font-size: 0.75rem;
+    }
+    
+    /* Sections Mobile */
+    section {
+        padding: 3rem 0;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-tag {
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    /* About Cards Mobile */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Stats/Audience Mobile */
+    .audience-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    /* Media Section Mobile */
+    .media-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .video-card iframe {
+        height: 250px;
+    }
+    
+    /* Packages Mobile */
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .pkg-card-vertical {
+        padding: 2rem 1.5rem;
+    }
+    
+    /* Benefits Mobile */
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* Footer Mobile */
+    .footer {
+        padding: 2rem 0 1rem !important;
+    }
+    
+    .footer .container > div:first-child {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    .footer a[style*="width: 40px"] {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 1.1rem;
+    }
+    
+    .footer i {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .navbar .container {
+        padding: 0 1rem;
+    }
+    
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+    
+    .brand-logo {
+        height: 32px;
+    }
+    
+    .hero-logo img {
+        height: 80px !important;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .video-card iframe {
+        height: 200px;
+    }
+    
+    .pkg-card-vertical {
+        padding: 1.5rem 1rem;
+    }
+    
+    .pkg-price {
+        font-size: 2rem;
+    }
+    
+    .benefit-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .scroll-top {
+        width: 45px;
+        height: 45px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+    
+    .photo-gallery {
+        padding: 0 1rem;
+        gap: 0.5rem;
+    }
+    
+    .footer {
+        font-size: 0.9rem;
+    }
+    
+    .footer h3 {
+        font-size: 1.2rem !important;
+    }
+    
+    .footer h4 {
+        font-size: 1rem !important;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .hero-stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .pkg-price {
+        font-size: 1.75rem;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.9rem 1.2rem;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        padding: 2rem 0;
+        min-height: auto;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hero-description {
+        display: none;
+    }
+    
+    .hero-stats {
+        display: none;
+    }
+    
+    .nav-menu {
+        padding: 5rem 2rem 2rem;
+    }
+    
+    .nav-link {
+        padding: 0.7rem 1.2rem;
+    }
 }
 
 /* Reduced motion preference */

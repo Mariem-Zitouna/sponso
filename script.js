@@ -359,18 +359,35 @@ function toggleMoreFeatures(pkgId) {
 }
 
 // Form submission
+// ===== Form submission via EmailJS =====
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Merci pour votre demande ! Nous vous contacterons bientôt.');
-        this.reset();
-    });
+    // Load EmailJS
+    const script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js";
+    document.body.appendChild(script);
+
+    script.onload = () => {
+        emailjs.init('9AeH_n2t6Pz9or1Fz'); // <-- remplace par ta clé publique
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            emailjs.sendForm('service_1lptt4s', 'template_ysv0fwx', this)
+                .then(() => {
+                    alert('Merci pour votre demande ! Nous vous contacterons bientôt.');
+                    this.reset();
+                }, (error) => {
+                    alert('Erreur lors de l’envoi de la demande. Veuillez réessayer.');
+                    console.error(error);
+                });
+        });
+    };
 }
 
 // ===== PARTICLES.JS NETWORK CONSTELLATION =====
 if (typeof particlesJS !== 'undefined') {
-    particlesJS('particles-js', {
+    const particlesConfig = {
         particles: {
             number: { 
                 value: 80, 
@@ -453,7 +470,15 @@ if (typeof particlesJS !== 'undefined') {
             }
         },
         retina_detect: true
-    });
+    };
+    
+    // Apply to hero section
+    particlesJS('particles-js', particlesConfig);
+    
+    // Apply to blue sections
+    particlesJS('particles-stats', particlesConfig);
+    particlesJS('particles-packages', particlesConfig);
+    particlesJS('particles-benefits', particlesConfig);
 }
 
 // ===== PARALLAX EFFECT ON HERO =====

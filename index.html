@@ -228,6 +228,7 @@
 
     <!-- Stats Section - Public & Promotion -->
     <section id="stats" class="blue-section" style="padding-top: 1rem;">
+        <div id="particles-stats"></div>
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Public & promotion</span>
@@ -426,6 +427,7 @@
 
     <!-- Packages Section -->
     <section id="packages" class="blue-section">
+        <div id="particles-packages"></div>
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Sponsoring</span>
@@ -917,6 +919,7 @@
 
     <!-- Benefits Section - Pourquoi Sponsoriser -->
     <section id="benefits" class="benefits-section blue-section">
+        <div id="particles-benefits"></div>
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Avantages</span>
@@ -974,89 +977,102 @@
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" style="background: white;">
+    <!-- Previous Sponsors -->
+    <section id="sponsors" style="background: var(--white); padding: 3rem 0;">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Contact</span>
-                <h2 class="section-title">Devenons Partenaires</h2>
-                <p style="color: var(--gray); max-width: 700px; margin: 0 auto;">
-                    Rejoignez-nous dans cette aventure exceptionnelle
-                </p>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">Ils nous ont fait confiance</h2>
+                <p style="color: var(--gray);">Nos partenaires des éditions précédentes</p>
             </div>
-
-            <div class="contact-grid">
-                <div>
-                    <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
-                        <h3 style="margin-bottom: 1rem;"><i class="fas fa-calendar" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Date</h3>
-                        <p>31 Janvier - 01 Février 2026</p>
-                    </div>
-                    <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
-                        <h3 style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Lieu</h3>
-                        <p>IHEC Carthage, Tunisie</p>
-                    </div>
-                    <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
-                        <h3 style="margin-bottom: 1rem;"><i class="fas fa-envelope" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Contact</h3>
-                        <p style="margin-bottom: 1rem;">
-                            <a href="mailto:hec.financeacademy@gmail.com" style="color: var(--accent-blue);">hec.financeacademy@gmail.com</a>
-                        </p>
-                        <div style="display: flex; gap: 0.75rem;">
-                            <a href="https://www.facebook.com/" target="_blank" style="width: 40px; height: 40px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.instagram.com/iheccodelab/" target="_blank" style="width: 40px; height: 40px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Demande d'Information</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label>Nom de l'entreprise *</label>
-                            <input type="text" required>
-                        </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <div class="form-group">
-                                <label>Nom complet *</label>
-                                <input type="text" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Téléphone *</label>
-                                <input type="tel" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Email *</label>
-                            <input type="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Package souhaité *</label>
-                            <select required>
-                                <option value="">Sélectionnez un package</option>
-                                <option>Pack Bronze - 2 000 TND</option>
-                                <option>Pack Silver - 4 000 TND</option>
-                                <option>Pack Gold - 6 000 TND</option>
-                                <option>Pack Exclusif - 20 000 TND</option>
-                                <option>Package sur mesure</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea rows="4" placeholder="Parlez-nous de vos objectifs..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                            <i class="fas fa-paper-plane"></i>
-                            Envoyer la demande
-                        </button>
-                    </form>
-                </div>
+            <div class="sponsors-grid">
+                <div class="sponsor-box"><img src="image/sponsors/image.png" alt="sponsors"></div>
             </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+<section id="contact" style="background: white;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Devenons Partenaires</h2>
+      <p style="color: var(--gray); max-width: 700px; margin: 0 auto;">
+        Rejoignez-nous dans cette aventure exceptionnelle
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Info Panels -->
+      <div>
+        <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3><i class="fas fa-calendar" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Date</h3>
+          <p>31 Janvier - 01 Février 2026</p>
+        </div>
+        <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Lieu</h3>
+          <p>IHEC Carthage, Tunisie</p>
+        </div>
+        <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+          <h3><i class="fas fa-envelope" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Contact</h3>
+          <p><a href="mailto:hec.financeacademy@gmail.com" style="color: var(--accent-blue);">hec.financeacademy@gmail.com</a></p>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="https://www.facebook.com/" target="_blank" style="width: 40px; height: 40px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/iheccodelab/" target="_blank" style="width: 40px; height: 40px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Demande d'Information</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <label>Nom de l'entreprise *</label>
+            <input type="text" name="company_name" required>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label>Nom complet *</label>
+              <input type="text" name="full_name" required>
+            </div>
+            <div class="form-group">
+              <label>Téléphone *</label>
+              <input type="tel" name="phone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>Package souhaité *</label>
+            <select name="package" required>
+              <option value="">Sélectionnez un package</option>
+              <option>Pack Bronze - 2 000 TND</option>
+              <option>Pack Silver - 4 000 TND</option>
+              <option>Pack Gold - 6 000 TND</option>
+              <option>Pack Exclusif - 20 000 TND</option>
+              <option>Package sur mesure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="4" placeholder="Parlez-nous de vos objectifs..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fas fa-paper-plane"></i> Envoyer la demande
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 
  
 
@@ -1070,7 +1086,7 @@
                         IHEC Code-Lab
                     </h3>
                     <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6; margin-bottom: 1rem;">
-                        L'événement tech de référence à l'IHEC Carthage
+                        L'événement tech de référence à l'IHEC Chage
                     </p>
                     <div style="display: flex; gap: 1rem; margin-top: 1rem;">
                         <a href="https://www.facebook.com/" target="_blank" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border-radius: 50%; transition: all 0.3s ease; color: white;">

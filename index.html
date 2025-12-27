@@ -17,18 +17,18 @@
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Custom CSS -->
+    <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Instagram Embed Script -->
+    <script async src="https://www.instagram.com/embed.js"></script>
 </head>
 <body>
-    <!-- Particle Background -->
-    <div id="particles-js"></div>
-
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-brand">
-                <i class="fas fa-code"></i>
+                <img src="image/codelab.png" alt="FA Logo" class="brand-logo">
                 <span>IHEC Code-Lab</span>
             </div>
             <div class="nav-toggle" id="navToggle">
@@ -39,11 +39,11 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Accueil</a></li>
                 <li><a href="#about" class="nav-link">À propos</a></li>
-                <li><a href="#stats" class="nav-link">Impact</a></li>
-                <li><a href="#aftermovie" class="nav-link">After movie</a></li>
-                <li><a href="#budgets" class="nav-link">Budgets</a></li>
+                <li><a href="#stats" class="nav-link">Public & Promotion</a></li>
+                <li><a href="#media" class="nav-link">Recap de la 1ère édition</a></li>
                 <li><a href="#packages" class="nav-link">Packages</a></li>
-                <li><a href="#dossier" class="nav-link">Dossier PDF</a></li>
+                <li><a href="#budgets" class="nav-link">Budgets</a></li>
+                <li><a href="#benefits" class="nav-link">Avantages</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li><a href="#contact" class="nav-link btn-sponsor"><i class="fas fa-handshake"></i> Devenir sponsor</a></li>
             </ul>
@@ -52,203 +52,185 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content" data-aos="fade-up">
-                <div class="hero-badge">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span>31 Janvier 2026</span>
-                </div>
-                <h1 class="hero-title">
-                    Hackathon<br>
-                    <span class="gradient-text">IHEC Code-Lab</span>
-                </h1>
-                <p class="hero-subtitle">
-                    L'événement tech incontournable de l'année à l'IHEC Carthage
-                </p>
-                <p class="hero-description">
-                    Rejoignez-nous pour une compétition intense de 24 heures où innovation, 
-                    technologie et entrepreneuriat se rencontrent pour créer les solutions de demain.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#packages" class="btn btn-primary">
-                        <i class="fas fa-handshake"></i>
-                        Devenir Sponsor
-                    </a>
-                    <a href="#dossier" class="btn btn-secondary">
-                        <i class="fas fa-file-pdf"></i>
-                        Voir le dossier PDF
-                    </a>
-                    <a href="#about" class="btn btn-secondary">
-                        <i class="fas fa-info-circle"></i>
-                        En savoir plus
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="150">0</span>
-                        <span class="stat-label">Participants</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="24">0</span>
-                        <span class="stat-label">Heures</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="6000">0</span>
-                        <span class="stat-label">Prix (TND)</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
-                <div class="floating-card card-1">
-                    <i class="fas fa-laptop-code"></i>
-                    <span>Développement</span>
-                </div>
-                <div class="floating-card card-2">
-                    <i class="fas fa-brain"></i>
-                    <span>Innovation - FinTech</span>
-                </div>
-                <div class="floating-card card-3">
-                    <i class="fas fa-users"></i>
-                    <span>Collaboration - Équipes</span>
-                </div>
-                <div class="hero-illustration">
-                    <i class="fas fa-rocket"></i>
-                </div>
-            </div>
+        <!-- Particles.js Network Background -->
+        <div id="particles-js"></div>
         </div>
-        <div class="hero-wave">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
-            </svg>
+        <div class="container">
+            <div class="hero-logo">
+                <img src="image/fa.png" alt="HEC Finance Academy" style="height: 150px; width: auto;">
+            </div>
+            
+            <h1 class="hero-title">
+                Hackathon<br>
+                <span class="gradient-text">IHEC Code-Lab</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                L'événement tech incontournable de l'année à l'IHEC Carthage
+            </p>
+            
+            <p class="hero-description">
+                Rejoignez-nous pour une compétition intense de 24 heures où innovation, 
+                technologie et entrepreneuriat se rencontrent pour créer les solutions de demain.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#packages" class="btn btn-primary">
+                    <i class="fas fa-handshake"></i>
+                    Devenir Sponsor
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    En savoir plus
+                </a>
+            </div>
+
+            <div class="hero-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>31 Janvier 2026</span>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="150">0</span>
+                    <span class="stat-label">Participants</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span>
+                    <span class="stat-label">Heures</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="6000">0</span>
+                    <span class="stat-label">Prix (TND)</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" style="background: white;">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">À propos</span>
                 <h2 class="section-title">HEC Finance Academy & IHEC Code Lab</h2>
-                <p class="section-description">
-                    Le dossier de sponsoring officiel, présenté en ligne - même logique, même contenu.
-                </p>
             </div>
 
-            <div class="about-content">
-                <div class="about-cards">
-                    <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-cards">
+                <div class="about-card" data-aos="fade-up">
+                    <div class="card-header">
                         <div class="card-icon">
-                            <i class="fas fa-university"></i>
+                            <img src="image/fa.png" alt="HEC Finance Academy" style="width: 100%; height: 100%; object-fit: contain;">
                         </div>
                         <h3>Présentation du club</h3>
-                        <p>
-                            <strong>HEC Finance Academy</strong> est un club qui a pour objectif de diffuser la culture financière
-                            en initiant les étudiants intéressés par la finance aux bases de cette discipline.
-                        </p>
-                        <p>
-                            C’est également le seul club de l’IHEC Carthage disposant d’un département IT, avec lequel a eu lieu
-                            la première édition du Hackathon <strong>IHEC CODE LAB</strong>.
-                        </p>
                     </div>
+                    <p>
+                        <span style="color: var(--secondary-color); font-weight: 700;">HEC Finance Academy</span> est un club qui a pour objectif de diffuser la culture financière en initiant les étudiants intéressés par la finance aux bases de cette discipline.
+                    </p>
+                    <p>
+                        C'est également le seul club de l'IHEC Carthage disposant d'un département IT, avec lequel a eu lieu la première édition du Hackathon <strong style="color: var(--primary-dark);">IHEC CODE LAB</strong>.
+                    </p>
+                    <p>
+                        En résumé, ce club permet aux étudiants de l'IHEC Carthage de se familiariser avec les vastes horizons de la finance et de l'IT tout en leur offrant l'opportunité de mettre en pratique et d'enrichir leurs connaissances.
+                    </p>
+                </div>
 
-                    <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
                         <div class="card-icon">
                             <i class="fas fa-award"></i>
                         </div>
                         <h3>Nos réalisations</h3>
-                        <p><strong>Chaque année, nous organisons :</strong></p>
-                        <ul class="clean-list">
-                            <li>Des conférences avec des experts et professionnels du secteur</li>
-                            <li>Des formations et workshops en finance, IT et soft skills</li>
-                            <li>Des compétitions et challenges académiques</li>
-                            <li>Des activités de networking réunissant étudiants, alumni et entreprises</li>
-                        </ul>
-                        <p class="muted" style="margin-top:12px;">
-                            Notre excellence a été reconnue à plusieurs reprises (Meilleure association & Meilleur événement IHEC Carthage 2018 et 2025, Meilleur projet SME 2025).
-                        </p>
                     </div>
-
-                    <div class="about-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Présentation de l’événement</h3>
-                        <p>
-                            Un hackathon est un événement collaboratif, organisé sur une durée limitée (24 à 72 heures),
-                            réunissant des développeurs, designers, entrepreneurs et autres professionnels pour concevoir
-                            rapidement des solutions innovantes à des problématiques spécifiques.
-                        </p>
-                        <p>
-                            Le thème du Hackathon <strong>IHEC Code Lab</strong> sera basé sur la <strong>Fin-Tech</strong>.
-                            Les frais de participations sont fixés à <strong>20dt</strong> par participant.
-                        </p>
-                    </div>
+                    
+                    <p style="font-weight: 600; margin-bottom: 0.75rem; color: var(--primary-dark);">Notre excellence a été reconnue à plusieurs reprises :</p>
+                    <ul style="list-style: disc; padding-left: 1.5rem;">
+                        <li>Meilleure association de l'IHEC Carthage (2018 & 2025)</li>
+                        <li>Meilleur événement de l'IHEC Carthage (2018 & 2025)</li>
+                        <li>Meilleur projet SME 2025</li>
+                    </ul>
+                   <br> 
+                    <p style="font-weight: 600; margin-bottom: 1rem; color: var(--primary-dark);">Chaque année, nous organisons :</p>
+                    <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Des conférences avec des experts et professionnels du secteur</li>
+                        <li>Des formations et workshops en finance, IT et soft skills</li>
+                        <li>Des compétitions et challenges académiques</li>
+                        <li>Des activités de networking réunissant étudiants, alumni et entreprises</li>
+                    </ul>
+                    <a href="https://hec-fa.netlify.app/events" target="_blank" style="color: var(--accent-blue); font-weight: 600; display: inline-block; margin-top: 1rem;">
+                        <i class="fas fa-external-link-alt"></i> Voir plus
+                    </a>
                 </div>
 
-                <div class="about-features">
-                    <div class="feature-list" data-aos="fade-right">
-                        <h3>Informations clés</h3>
-                        <div class="feature-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Lieu</strong>
-                                <p>IHEC Carthage</p>
-                            </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <img src="image/codelab.png" alt="IHEC Code-Lab" style="width: 100%; height: 100%; object-fit: contain;">
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-calendar-alt"></i>
-                            <div>
-                                <strong>Date</strong>
-                                <p>Du 31 Janvier 2026 au 01 Février 2026</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-users"></i>
-                            <div>
-                                <strong>Affluence</strong>
-                                <p>300 personnes dont 150 participants</p>
-                            </div>
-                        </div>
+                        <h3>L'événement</h3>
                     </div>
-
-                    <div class="about-image" data-aos="fade-left">
-                        <div class="image-card">
-                            <i class="fas fa-rocket"></i>
-                            <h4>24h d’innovation</h4>
-                            <p>Créativité • Technologie • Travail d’équipe</p>
-                            <a class="btn btn-outline-primary btn-inline" href="#aftermovie">
-                                <i class="fas fa-play"></i>
-                                Voir l'after movie
-                            </a>
-                        </div>
-                    </div>
+                    <p>
+                        Un hackathon est un événement collaboratif, organisé sur une durée limitée (24 à 72 heures), réunissant des développeurs, designers, entrepreneurs et autres professionnels pour concevoir rapidement des solutions innovantes à des problématiques spécifiques.
+                    </p>
+                    <p>
+                        Le thème du Hackathon IHEC Code Lab sera basé sur la <strong style="color: var(--secondary-color);">Fin-Tech</strong>. Les frais de participations sont fixés à 20dt par participant.
+                    </p>
+                    <a href="#media" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1rem; padding: 0.75rem 1.5rem; background: linear-gradient(135deg, #ffd700, #ffb700); color: #1a237e; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(255, 215, 0, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(255, 215, 0, 0.3)'">
+                        <i class="fas fa-play-circle"></i>
+                        Voir la vidéo recap
+                    </a>
                 </div>
             </div>
+
+            <!-- Photo Gallery -->
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="image/1.png" alt="Photo 1">
+                </div>
+                <div class="photo-item">
+                    <img src="image/2.png" alt="Photo 2">
+                </div>
+                <div class="photo-item">
+                    <img src="image/3.png" alt="Photo 3">
+                </div>
+                <div class="photo-item">
+                    <img src="image/4.png" alt="Photo 4">
+                </div>
+                <div class="photo-item">
+                    <img src="image/5.png" alt="Photo 5">
+                </div>
+                <div class="photo-item">
+                    <img src="image/6.png" alt="Photo 6">
+                </div>
+                <div class="photo-item">
+                    <img src="image/7.png" alt="Photo 7">
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats-section">
+    <!-- Stats Section - Public & Promotion -->
+    <section id="stats" class="blue-section" style="padding-top: 1rem;">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
+            <div class="section-header">
                 <span class="section-tag">Public & promotion</span>
                 <h2 class="section-title">Public cible & campagne de promotion</h2>
-                <p class="section-description">
-                    Une audience multi-institutions et une visibilité pensée avant, pendant et après l’événement.
+                <p style="color: rgba(255, 255, 255, 0.8); max-width: 700px; margin: 0 auto;">
+                    Une audience multi-institutions et une visibilité pensée avant, pendant et après l'événement.
                 </p>
             </div>
 
-            <div class="audience-section" data-aos="fade-up">
-                <h3>Public</h3>
+            <div class="audience-section">
+                <h3 style="color: white; margin-bottom: 2rem;">Public</h3>
                 <div class="audience-grid">
                     <div class="audience-card">
                         <i class="fas fa-graduation-cap"></i>
                         <h4>Étudiants multi-institutions</h4>
-                        <p>Des étudiants provenant de plusieurs institutions, passionnés par l’informatique et les nouvelles technologies.</p>
+                        <p>Des étudiants provenant de plusieurs institutions, passionnés par l'informatique et les nouvelles technologies.</p>
                     </div>
                     <div class="audience-card">
                         <i class="fas fa-mountain"></i>
-                        <h4>Challenge & esprit d’équipe</h4>
+                        <h4>Challenge & esprit d'équipe</h4>
                         <p>Des étudiants courageux et capables de relever des défis.</p>
                     </div>
                     <div class="audience-card">
@@ -259,37 +241,36 @@
                 </div>
             </div>
 
-            <div class="promo-section" data-aos="fade-up">
-                <h3>Campagne de promotion</h3>
-
+            <div class="promo-section">
+                <h3 style="color: white; text-align: center; margin-bottom: 2rem;">Campagne de promotion</h3>
                 <div class="promo-grid">
-                    <div class="promo-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="promo-card">
                         <div class="promo-head">
                             <span class="promo-step">1</span>
-                            <h4>Avant l’événement - Teasing & préparation</h4>
+                            <h4>Avant l'événement - Teasing & préparation</h4>
                         </div>
                         <ul class="promo-list">
-                            <li>Identité visuelle de l’événement</li>
+                            <li>Identité visuelle de l'événement</li>
                             <li>Supports physiques & digitaux (badges, pass, kits participants)</li>
                             <li>Activation & animation des réseaux sociaux</li>
                             <li>Teasing progressif du hackathon</li>
-                            <li>Contenus d’annonce & de rappel</li>
+                            <li>Contenus d'annonce & de rappel</li>
                             <li>Countdown avant le jour J</li>
                             <li>Mise en avant des éditions précédentes</li>
-                            <li>Création d’attente autour du thème & des challenges</li>
+                            <li>Création d'attente autour du thème & des challenges</li>
                             <li>Engagement de la communauté (questions, interactions)</li>
                         </ul>
                     </div>
 
-                    <div class="promo-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="promo-card">
                         <div class="promo-head">
                             <span class="promo-step">2</span>
-                            <h4>Pendant l’événement - Couverture live & engagement</h4>
+                            <h4>Pendant l'événement - Couverture live & engagement</h4>
                         </div>
                         <ul class="promo-list">
                             <li>Couverture en temps réel sur les réseaux sociaux</li>
                             <li>Stories & contenus courts et dynamiques</li>
-                            <li>Mise en avant de l’ambiance & des coulisses</li>
+                            <li>Mise en avant de l'ambiance & des coulisses</li>
                             <li>Présentation de participants & équipes</li>
                             <li>Contenus fun et humains (moments informels)</li>
                             <li>Récompenses symboliques & animations médiatiques</li>
@@ -299,232 +280,127 @@
                         </ul>
                     </div>
 
-                    <div class="promo-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="promo-card">
                         <div class="promo-head">
                             <span class="promo-step">3</span>
-                            <h4>Après l’événement - Valorisation & impact</h4>
+                            <h4>Après l'événement - Valorisation & impact</h4>
                         </div>
                         <ul class="promo-list">
                             <li>Aftermovie officiel</li>
                             <li>Récapitulatif des moments clés</li>
                             <li>Mise en valeur des gagnants & finalistes</li>
-                            <li>Témoignages & retours d’expérience des participants</li>
+                            <li>Témoignages & retours d'expérience des participants</li>
                             <li>Contenus de clôture & remerciements</li>
-                            <li>Prolongation de la visibilité de l’événement</li>
+                            <li>Prolongation de la visibilité de l'événement</li>
                             <li>Capitalisation pour les futures éditions</li>
                         </ul>
-
-                        <div style="margin-top:14px;">
-                            <a class="btn btn-outline-primary btn-inline" href="#aftermovie">
-                                <i class="fas fa-play"></i>
-                                Regarder l'after movie
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Aftermovie Section (PDF) -->
-    <section id="aftermovie" class="media-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">After movie</span>
-                <h2 class="section-title">Récapitulatif de la 1ère édition</h2>
-                <p class="section-description">
-                    Une immersion dans l'ambiance du hackathon : énergie, créativité et esprit d'équipe.
-                </p>
-            </div>
-
-            <div class="media-grid" data-aos="fade-up" data-aos-delay="100">
-                <div class="media-card">
-                    <div class="media-video">
-                        <video controls preload="metadata" poster="" aria-label="After movie IHEC Code-Lab">
-                            <source src="After-movie-hackathon.mp4" type="video/mp4" />
-                            Votre navigateur ne supporte pas la lecture vidéo.
-                        </video>
-                    </div>
-                    <div class="media-meta">
-                        <h3>After movie</h3>
-                        <p>Revivez les meilleurs moments, des premières lignes de code jusqu'à la remise des prix.</p>
-                    </div>
-                </div>
-
-                <div class="media-card">
-                    <div class="media-doc">
-                        <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
-                        <div>
-                            <h3>Le dossier complet (PDF)</h3>
-                            <p>Consultez le dossier de sponsoring officiel : packs, budgets et avantages détaillés.</p>
-                            <a class="btn btn-primary btn-inline" href="IHEC-Code-lab.pdf" target="_blank" rel="noopener">
-                                <i class="fas fa-download"></i>
-                                Ouvrir le PDF
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="media-card">
-                    <div class="media-embed" aria-label="Vidéo teaser Instagram">
-                        <iframe
-                            title="Vidéo teaser Instagram"
-                            src="https://www.instagram.com/reel/DFIIlqGsgRR/embed"
-                            allowtransparency="true"
-                            allowfullscreen
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                    <div class="media-meta">
-                        <h3>Vidéo teaser</h3>
-                        <p>Une vidéo courte qui présente l’événement et l’esprit du hackathon.</p>
-                        <a class="btn btn-outline-primary btn-inline" href="https://www.instagram.com/reel/DFIIlqGsgRR/" target="_blank" rel="noopener">
-                            <i class="fab fa-instagram"></i>
-                            Ouvrir sur Instagram
+                        <a href="#media" class="btn-aftermovie">
+                            <i class="fas fa-play"></i> Regarder l'after movie
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Budgets Section (PDF) -->
-    <section id="budgets" class="budgets-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Budget</span>
-                <h2 class="section-title">Budgets de l'événement</h2>
-                <p class="section-description">
-                    Une transparence totale sur les postes clés (nourriture & boissons, prix, et budget global estimé).
-                </p>
-            </div>
-
-            <div class="budget-grid" data-aos="fade-up" data-aos-delay="100">
-                <div class="budget-card">
-                    <h3>Nourriture & Boissons</h3>
-                    <p class="subtext">Détail des repas, eau minérale et boissons gazeuses (contenu du dossier).</p>
-
-                    <div class="budget-tables">
-                        <div class="budget-table-card">
-                            <h4>Repas</h4>
-                            <table class="budget-table" aria-label="Budget repas">
-                                <thead>
-                                    <tr>
-                                        <th>Repas</th>
-                                        <th>Quantité</th>
-                                        <th>Prix unitaire (TND)</th>
-                                        <th>Total (TND)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Déjeuner (sandwich)</td>
-                                        <td>150</td>
-                                        <td>8</td>
-                                        <td><strong>1 200</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dîner (sandwich)</td>
-                                        <td>150</td>
-                                        <td>8</td>
-                                        <td><strong>1 200</strong></td>
-                                    </tr>
-                                    <tr class="row-total">
-                                        <td colspan="3"><strong>Total Déjeuner + Dîner</strong></td>
-                                        <td><strong>2 400</strong></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <table class="budget-table" aria-label="Budget petit-déjeuner" style="margin-top:14px;">
-                                <thead>
-                                    <tr>
-                                        <th>Élément</th>
-                                        <th>Quantité</th>
-                                        <th>Prix unitaire (TND)</th>
-                                        <th>Total (TND)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Petit-déjeuner (1 viennoiserie + café ou jus)</td>
-                                        <td>150</td>
-                                        <td>4</td>
-                                        <td><strong>600</strong></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="budget-table-card">
-                            <h4>Boissons</h4>
-                            <table class="budget-table" aria-label="Budget eau minérale">
-                                <thead>
-                                    <tr>
-                                        <th>Élément</th>
-                                        <th>Quantité</th>
-                                        <th>Prix unitaire (TND)</th>
-                                        <th>Total (TND)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Eau minérale (bouteille 0,5L)</td>
-                                        <td>300</td>
-                                        <td>0,6</td>
-                                        <td><strong>180</strong></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <table class="budget-table" aria-label="Budget boissons gazeuses" style="margin-top:14px;">
-                                <thead>
-                                    <tr>
-                                        <th>Élément</th>
-                                        <th>Quantité</th>
-                                        <th>Prix unitaire (TND)</th>
-                                        <th>Total (TND)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Boissons gazeuses (canette 33cl)</td>
-                                        <td>150</td>
-                                        <td>1,2</td>
-                                        <td><strong>180</strong></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <div class="budget-total">
-                                <span>Total nourriture & boissons</span>
-                                <strong>3 360 TND</strong>
+            <div style="margin-top: 4rem; padding-top: 3rem; border-top: 2px solid rgba(255, 255, 255, 0.2);">
+                <h3 style="color: white; text-align: center; margin-bottom: 3rem; font-size: 1.5rem;">Visibilité sur les réseaux sociaux</h3>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/HEC.Finance.Academy" target="_blank" style="text-decoration: none; color: white; transition: all 0.3s ease;">
+                        <div style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); padding: 2rem; border-radius: 16px; text-align: center; cursor: pointer; transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;" onmouseover="this.style.background='rgba(59, 89, 152, 0.3)'; this.style.borderColor='rgba(59, 89, 152, 0.5)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.08)'; this.style.borderColor='rgba(255, 255, 255, 0.15)'">
+                            <div style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                                <i class="fab fa-facebook-f" style="font-size: 3rem; color: #ffffff;"></i>
                             </div>
+                            <h4 style="margin: 0 0 0.5rem; font-size: 1.1rem;">HEC Finance Academy</h4>
+                            <p style="margin: 0; color: var(--secondary-color); font-weight: 700; font-size: 1.3rem;">8.8k Followers</p>
+                        </div>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/hec_finance_academy/" target="_blank" style="text-decoration: none; color: white; transition: all 0.3s ease;">
+                        <div style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); padding: 2rem; border-radius: 16px; text-align: center; cursor: pointer; transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;" onmouseover="this.style.background='rgba(229, 72, 141, 0.3)'; this.style.borderColor='rgba(229, 72, 141, 0.5)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.08)'; this.style.borderColor='rgba(255, 255, 255, 0.15)'">
+                            <div style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                                <i class="fab fa-instagram" style="font-size: 3rem; color: #ffffff;"></i>
+                            </div>
+                            <h4 style="margin: 0 0 0.5rem; font-size: 1.1rem;">hec_finance_academy</h4>
+                            <p style="margin: 0; color: var(--secondary-color); font-weight: 700; font-size: 1.3rem;">3.2k Followers</p>
+                        </div>
+                    </a>
+
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com/@hec_fa" target="_blank" style="text-decoration: none; color: white; transition: all 0.3s ease;">
+                        <div style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); padding: 2rem; border-radius: 16px; text-align: center; cursor: pointer; transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;" onmouseover="this.style.background='rgba(25, 25, 25, 0.3)'; this.style.borderColor='rgba(255, 255, 255, 0.3)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.08)'; this.style.borderColor='rgba(255, 255, 255, 0.15)'">
+                            <div style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                                <i class="fab fa-tiktok" style="font-size: 3rem; color: #ffffff;"></i>
+                            </div>
+                            <h4 style="margin: 0 0 0.5rem; font-size: 1.1rem;">hec_fa</h4>
+                            <p style="margin: 0; color: var(--secondary-color); font-weight: 700; font-size: 1.3rem;">2.6k Followers</p>
+                        </div>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/company/hec-finance-academy/" target="_blank" style="text-decoration: none; color: white; transition: all 0.3s ease;">
+                        <div style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); padding: 2rem; border-radius: 16px; text-align: center; cursor: pointer; transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;" onmouseover="this.style.background='rgba(0, 119, 181, 0.3)'; this.style.borderColor='rgba(0, 119, 181, 0.5)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.08)'; this.style.borderColor='rgba(255, 255, 255, 0.15)'">
+                            <div style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                                <i class="fab fa-linkedin-in" style="font-size: 3rem; color: #ffffff;"></i>
+                            </div>
+                            <h4 style="margin: 0 0 0.5rem; font-size: 1.1rem;">HEC Finance Academy</h4>
+                            <p style="margin: 0; color: var(--secondary-color); font-weight: 700; font-size: 1.3rem;">1.1k Followers</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media" style="background: white;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Récapitulatif de la 1ère édition</span>
+                <h2 class="section-title">Revivez l'expérience</h2>
+            </div>
+
+            <div class="media-layout">
+                <div class="media-left">
+                    <div class="media-card">
+                        <div class="media-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/uTEKFrHD7qU"
+                                title="After Movie"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="media-meta">
+                            <h3>After Movie Officiel</h3>
+                            <p>Revivez les meilleurs moments de la 1ère édition</p>
                         </div>
                     </div>
-
-                    <details class="budget-original">
-                        <summary>Voir le tableau original (image)</summary>
-                        <img src="budget nourriture.png" alt="Tableau original - Budget nourriture et boissons" class="budget-image" loading="lazy">
-                    </details>
-</div>
-
-                <div class="budget-card">
-                    <h3>Résumé (extrait du dossier)</h3>
-                    <ul class="budget-bullets">
-                        <li><strong>Budget nourriture & boissons :</strong> 3 360 TND</li>
-                        <li><strong>Budget prix :</strong> 6 000 TND (3 000 / 2 000 / 1 000)</li>
-                        <li><strong>Budget total estimé :</strong> ~ 20 000 TND</li>
-                    </ul>
-                    <div class="budget-actions">
-                        <a class="btn btn-outline-primary" href="#packages">
-                            <i class="fas fa-handshake"></i>
-                            Voir les packages
+                    
+                    <div class="download-dossier">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>Dossier Complet</h3>
+                        <p>Téléchargez le document officiel avec tous les détails</p>
+                        <a href="IHEC-Code-lab.pdf" download class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            Télécharger le PDF
                         </a>
-                        <a class="btn btn-primary" href="IHEC-Code-lab.pdf" target="_blank" rel="noopener">
-                            <i class="fas fa-file-pdf"></i>
-                            Vérifier dans le PDF
-                        </a>
+                    </div>
+                </div>
+
+                <div class="media-right">
+                    <div class="media-card instagram-card">
+                        <div class="media-video instagram-video">
+                            <iframe
+                                src="https://www.instagram.com/reel/DFIIlqGsgRR/embed"
+                                title="Instagram Teaser"
+                                allowfullscreen
+                                style="height: 100%; width: 100%;">
+                            </iframe>
+                        </div>
+                        <div class="media-meta">
+                            <h3>Teaser Instagram</h3>
+                            <p>L'ambiance du hackathon en quelques secondes</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -532,296 +408,506 @@
     </section>
 
     <!-- Packages Section -->
-    <section id="packages" class="packages">
+    <section id="packages" class="blue-section">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Avantages / Visibilité</span>
-                <h2 class="section-title">Packs de sponsoring</h2>
-                <p class="section-description">
-                    Des packs clairs, alignés sur le dossier officiel - du <strong>Bronze</strong> à l’<strong>Exclusif</strong>.
-                </p>
+            <div class="section-header">
+                <span class="section-tag">Sponsoring</span>
+                <h2 class="section-title">Nos Packages de Sponsoring</h2>
             </div>
 
-            <div class="packages-grid">
-                <!-- Bronze -->
-                <div class="package-card bronze" data-aos="fade-up" data-aos-delay="100">
-                    <div class="package-badge"><i class="fas fa-medal"></i></div>
-                    <h3 class="package-name">Pack Bronze</h3>
-                    <div class="package-price">
-                        <span class="currency">Montant</span>
-                        <span class="amount">2 000 TND</span>
-                    </div>
-                    <ul class="package-features">
-                        <li><i class="fas fa-check"></i> Logo sur site web officiel</li>
-                        <li><i class="fas fa-check"></i> Logo sur réseaux sociaux</li>
-                        <li><i class="fas fa-check"></i> Mention dans les publications officielles</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Logo sur supports imprimés (banderoles, roll-ups)</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Logo sur écran LED / scène</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Présence sur tous les supports de communication</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Mise en place d’un stand</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Distribution de goodies / flyers</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Interaction directe avec participants</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Mot lors de la cérémonie d’ouverture et de clôture</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Développement d’une solution dédiée</li>
-                    </ul>
-                    <button class="btn-package" onclick="openContactModal('Pack Bronze')">Choisir Bronze</button>
-                </div>
-
-                <!-- Silver -->
-                <div class="package-card silver" data-aos="fade-up" data-aos-delay="200">
-                    <div class="package-badge"><i class="fas fa-medal"></i></div>
-                    <h3 class="package-name">Pack Silver</h3>
-                    <div class="package-price">
-                        <span class="currency">Montant</span>
-                        <span class="amount">4 000 TND</span>
-                    </div>
-                    <ul class="package-features">
-                        <li><i class="fas fa-check"></i> Logo sur site web officiel</li>
-                        <li><i class="fas fa-check"></i> Logo sur réseaux sociaux</li>
-                        <li><i class="fas fa-check"></i> Mention dans les publications officielles</li>
-                        <li><i class="fas fa-check"></i> Logo sur supports imprimés (banderoles, roll-ups)</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Logo sur écran LED / scène</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Présence sur tous les supports de communication</li>
-                        <li><i class="fas fa-check"></i> Mise en place d’un stand</li>
-                        <li><i class="fas fa-check"></i> Distribution de goodies / flyers</li>
-                        <li><i class="fas fa-check"></i> Interaction directe avec participants</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Mot lors de la cérémonie d’ouverture et de clôture</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Développement d’une solution dédiée</li>
-                    </ul>
-                    <button class="btn-package" onclick="openContactModal('Pack Silver')">Choisir Silver</button>
-                </div>
-
-                <!-- Gold -->
-                <div class="package-card gold popular" data-aos="fade-up" data-aos-delay="300">
-                    <div class="popular-badge">Recommandé</div>
-                    <div class="package-badge"><i class="fas fa-medal"></i></div>
-                    <h3 class="package-name">Pack Gold</h3>
-                    <div class="package-price">
-                        <span class="currency">Montant</span>
-                        <span class="amount">6 000 TND</span>
-                    </div>
-                    <ul class="package-features">
-                        <li><i class="fas fa-check"></i> Logo sur site web officiel</li>
-                        <li><i class="fas fa-check"></i> Logo sur réseaux sociaux</li>
-                        <li><i class="fas fa-check"></i> Mention dans les publications officielles</li>
-                        <li><i class="fas fa-check"></i> Logo sur supports imprimés (banderoles, roll-ups)</li>
-                        <li><i class="fas fa-check"></i> Logo sur écran LED / scène</li>
-                        <li><i class="fas fa-check"></i> Présence sur tous les supports de communication</li>
-                        <li><i class="fas fa-check"></i> Mise en place d’un stand</li>
-                        <li><i class="fas fa-check"></i> Distribution de goodies / flyers</li>
-                        <li><i class="fas fa-check"></i> Interaction directe avec participants</li>
-                        <li><i class="fas fa-check"></i> Mot lors de la cérémonie d’ouverture et de clôture</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Développement d’une solution dédiée</li>
-                    </ul>
-                    <button class="btn-package" onclick="openContactModal('Pack Gold')">Choisir Gold</button>
-                </div>
-
-                <!-- Exclusif -->
-                <div class="package-card platinum" data-aos="fade-up" data-aos-delay="400">
-                    <div class="package-badge"><i class="fas fa-crown"></i></div>
-                    <h3 class="package-name">Pack Exclusif</h3>
-                    <div class="package-price">
-                        <span class="currency">Montant</span>
-                        <span class="amount">20 000 TND</span>
-                    </div>
-                    <ul class="package-features">
-                        <li><i class="fas fa-check"></i> Logo sur site web officiel</li>
-                        <li><i class="fas fa-check"></i> Logo sur réseaux sociaux</li>
-                        <li><i class="fas fa-check"></i> Mention dans les publications officielles</li>
-                        <li><i class="fas fa-check"></i> Logo sur supports imprimés (banderoles, roll-ups)</li>
-                        <li><i class="fas fa-check"></i> Logo sur écran LED / scène</li>
-                        <li><i class="fas fa-check"></i> Présence sur tous les supports de communication</li>
-                        <li><i class="fas fa-check"></i> Mise en place d’un stand <span class="muted">(premium)</span></li>
-                        <li><i class="fas fa-check"></i> Distribution de goodies / flyers</li>
-                        <li><i class="fas fa-check"></i> Interaction directe avec participants</li>
-                        <li><i class="fas fa-check"></i> Mot lors de la cérémonie d’ouverture et de clôture</li>
-                        <li><i class="fas fa-check"></i> Développement d’une solution dédiée pour le sponsor</li>
-                    </ul>
-                    <button class="btn-package" onclick="openContactModal('Pack Exclusif')">Choisir Exclusif</button>
-                </div>
-            </div>
-
-            <div class="custom-package" data-aos="fade-up">
-                <div class="custom-content">
-                    <i class="fas fa-handshake"></i>
-                    <div>
-                        <h3>Besoin d’un échange rapide ?</h3>
-                        <p>Nous adaptons aussi le partenariat selon vos objectifs (visibilité, recrutement, contenu, activation).</p>
-                    </div>
-                    <button class="btn btn-primary" onclick="openContactModal('Partenariat sur mesure')">
-                        <i class="fas fa-envelope"></i>
-                        Nous contacter
-                    </button>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Packs Table (PDF) -->
-    <section id="packs-table" class="packs-table-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Avantages</span>
-                <h2 class="section-title">Tableau des packs</h2>
-                <p class="section-description">
-                    Vue détaillée des avantages et niveaux de visibilité par pack (extrait du dossier).
-                </p>
-            </div>
-
-            <div class="packs-table-wrap" data-aos="fade-up" data-aos-delay="100">
-                <div class="packs-table-scroll" role="region" aria-label="Tableau des packs">
-                    <table class="packs-table">
-                        <thead>
-                            <tr>
-                                <th>Avantages - Visibilité</th>
-                                <th class="col-bronze">Bronze<br><span class="table-price">2 000 TND</span></th>
-                                <th class="col-silver">Silver<br><span class="table-price">4 000 TND</span></th>
-                                <th class="col-gold">Gold<br><span class="table-price">6 000 TND</span></th>
-                                <th class="col-exclusive">Exclusif<br><span class="table-price">20 000 TND</span></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Logo sur site web officiel</td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Logo sur réseaux sociaux</td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Mention dans les publications officielles</td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Logo sur supports imprimés (banderoles, roll-ups)</td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Logo sur écran LED - scène</td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Présence sur tous les supports de communication</td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Mise en place d’un stand</td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i> <span class="pill">premium</span></td>
-                            </tr>
-                            <tr>
-                                <td>Distribution de goodies - flyers</td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Interaction directe avec participants</td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Mot lors de la cérémonie d’ouverture et de clôture</td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Développement d’une solution dédiée pour le sponsor</td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center na"><i class="fas fa-times"></i></td>
-                                <td class="center"><i class="fas fa-check"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="packs-table-actions">
-                    <a class="btn btn-outline-primary" href="#contact">
-                        <i class="fas fa-handshake"></i>
-                        Devenir sponsor
-                    </a>
-                    <details class="packs-original">
-                        <summary>Voir l’image originale du tableau</summary>
-                        <div class="pdf-image-frame" style="margin-top:12px;">
-                            <img src="les packs.png" alt="Tableau des packs de sponsoring" loading="lazy">
+            <!-- Packages Grid - 4 Cards Side by Side -->
+            <div class="packages-vertical-grid">
+                
+                <!-- Bronze Card -->
+                <div class="pkg-card-vertical bronze">
+                    <div class="pkg-card-header bronze-bg">
+                        <div class="pkg-icon-circle bronze-border">
+                            <i class="fas fa-award"></i>
                         </div>
-                    </details>
+                        <h3 class="pkg-card-title">Bronze</h3>
+                        <div class="pkg-card-price">2 000 TND</div>
+                    </div>
+                    <div class="pkg-card-body">
+                        <ul class="pkg-preview-list">
+                            <li class="included"><i class="fas fa-check"></i> Logo sur site web officiel</li>
+                            <li class="included"><i class="fas fa-check"></i> Logo sur réseaux sociaux</li>
+                            <li class="included"><i class="fas fa-check"></i> Mention dans les publications officielles</li>
+                        </ul>
+                        <div class="pkg-more-features" id="more-bronze">
+                            <li class="not-included"><i class="fas fa-times"></i> Logo sur supports imprimés (banderoles, roll-ups)</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Logo sur écran LED - scène</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Présence sur tous les supports de communication</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Mise en place d'un stand</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Distribution de goodies - flyers</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Interaction directe avec participants</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Mot lors de la cérémonie d'ouverture et de clôture</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Développement d'une solution dédiée</li>
+                        </div>
+                        <button class="pkg-voir-plus-btn" onclick="toggleMoreFeatures('bronze')">
+                            <span id="btn-text-bronze">Voir plus</span> <i class="fas fa-chevron-down" id="btn-icon-bronze"></i>
+                        </button>
+                        <a href="#contact" class="btn-choose-large bronze-btn-lg">
+                            <i class="fas fa-handshake"></i> Choisir cette offre
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Silver Card -->
+                <div class="pkg-card-vertical silver">
+                    <div class="pkg-card-header silver-bg">
+                        <div class="pkg-icon-circle silver-border">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="pkg-card-title">Silver</h3>
+                        <div class="pkg-card-price">4 000 TND</div>
+                    </div>
+                    <div class="pkg-card-body">
+                        <ul class="pkg-preview-list">
+                            <li class="included"><i class="fas fa-check"></i> Logo sur site web officiel</li>
+                            <li class="included"><i class="fas fa-check"></i> Logo sur réseaux sociaux</li>
+                            <li class="included"><i class="fas fa-check"></i> Mention dans les publications officielles</li>
+                        </ul>
+                        <div class="pkg-more-features" id="more-silver">
+                            <li class="included"><i class="fas fa-check"></i> Logo sur supports imprimés (banderoles, roll-ups)</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Logo sur écran LED - scène</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Présence sur tous les supports de communication</li>
+                            <li class="included"><i class="fas fa-check"></i> Mise en place d'un stand</li>
+                            <li class="included"><i class="fas fa-check"></i> Distribution de goodies - flyers</li>
+                            <li class="included"><i class="fas fa-check"></i> Interaction directe avec participants</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Mot lors de la cérémonie d'ouverture et de clôture</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Développement d'une solution dédiée</li>
+                        </div>
+                        <button class="pkg-voir-plus-btn" onclick="toggleMoreFeatures('silver')">
+                            <span id="btn-text-silver">Voir plus</span> <i class="fas fa-chevron-down" id="btn-icon-silver"></i>
+                        </button>
+                        <a href="#contact" class="btn-choose-large silver-btn-lg">
+                            <i class="fas fa-handshake"></i> Choisir cette offre
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Gold Card -->
+                <div class="pkg-card-vertical gold recommended">
+                    <span class="pkg-recommended-tag">⭐ Recommandé</span>
+                    <div class="pkg-card-header gold-bg">
+                        <div class="pkg-icon-circle gold-border">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="pkg-card-title">Gold</h3>
+                        <div class="pkg-card-price">6 000 TND</div>
+                    </div>
+                    <div class="pkg-card-body">
+                        <ul class="pkg-preview-list">
+                            <li class="included"><i class="fas fa-check"></i> Logo sur site web officiel</li>
+                            <li class="included"><i class="fas fa-check"></i> Logo sur réseaux sociaux</li>
+                            <li class="included"><i class="fas fa-check"></i> Mention dans les publications officielles</li>
+                        </ul>
+                        <div class="pkg-more-features" id="more-gold">
+                            <li class="included"><i class="fas fa-check"></i> Logo sur supports imprimés (banderoles, roll-ups)</li>
+                            <li class="included"><i class="fas fa-check"></i> Logo sur écran LED - scène</li>
+                            <li class="included"><i class="fas fa-check"></i> Présence sur tous les supports de communication</li>
+                            <li class="included"><i class="fas fa-check"></i> Mise en place d'un stand</li>
+                            <li class="included"><i class="fas fa-check"></i> Distribution de goodies - flyers</li>
+                            <li class="included"><i class="fas fa-check"></i> Interaction directe avec participants</li>
+                            <li class="included"><i class="fas fa-check"></i> Mot lors de la cérémonie d'ouverture et de clôture</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Développement d'une solution dédiée</li>
+                        </div>
+                        <button class="pkg-voir-plus-btn" onclick="toggleMoreFeatures('gold')">
+                            <span id="btn-text-gold">Voir plus</span> <i class="fas fa-chevron-down" id="btn-icon-gold"></i>
+                        </button>
+                        <a href="#contact" class="btn-choose-large gold-btn-lg">
+                            <i class="fas fa-handshake"></i> Choisir cette offre
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Exclusif Card -->
+                <div class="pkg-card-vertical exclusive">
+                    <div class="pkg-card-header exclusive-bg">
+                        <div class="pkg-icon-circle exclusive-border">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="pkg-card-title">Exclusif</h3>
+                        <div class="pkg-card-price">20 000 TND</div>
+                    </div>
+                    <div class="pkg-card-body">
+                        <ul class="pkg-preview-list">
+                            <li class="included"><i class="fas fa-check"></i> Logo sur site web officiel</li>
+                            <li class="included"><i class="fas fa-check"></i> Logo sur réseaux sociaux</li>
+                            <li class="included"><i class="fas fa-check"></i> Mention dans les publications officielles</li>
+                        </ul>
+                        <div class="pkg-more-features" id="more-exclusive">
+                            <li class="included"><i class="fas fa-check"></i> Logo sur supports imprimés (banderoles, roll-ups)</li>
+                            <li class="included"><i class="fas fa-check"></i> Logo sur écran LED - scène</li>
+                            <li class="included"><i class="fas fa-check"></i> Présence sur tous les supports de communication</li>
+                            <li class="included"><i class="fas fa-check"></i> Mise en place d'un stand</li>
+                            <li class="included"><i class="fas fa-check"></i> Distribution de goodies - flyers</li>
+                            <li class="included"><i class="fas fa-check"></i> Interaction directe avec participants</li>
+                            <li class="included"><i class="fas fa-check"></i> Mot lors de la cérémonie d'ouverture et de clôture</li>
+                            <li class="included"><i class="fas fa-check"></i> Développement d'une solution dédiée</li>
+                        </div>
+                        <button class="pkg-voir-plus-btn" onclick="toggleMoreFeatures('exclusive')">
+                            <span id="btn-text-exclusive">Voir plus</span> <i class="fas fa-chevron-down" id="btn-icon-exclusive"></i>
+                        </button>
+                        <a href="#contact" class="btn-choose-large exclusive-btn-lg">
+                            <i class="fas fa-handshake"></i> Choisir cette offre
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Comparison Table (Expandable) -->
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid rgba(0,0,0,0.06);">
+                <!-- Table Header with Expand Button -->
+                <div class="packs-table-header" onclick="togglePacksTable()">
+                    <div class="packs-table-header-left">
+                        <h3>📊 Tableau Comparatif Complet</h3>
+                        <p>Vue détaillée de tous les avantages par pack</p>
+                    </div>
+                    <i class="fas fa-chevron-down table-expand-icon" id="packs-icon"></i>
+                </div>
+
+                <!-- Table Content (Expandable) -->
+                <div class="packs-table-content" id="packs-table-content">
+                    <div class="packs-table-wrap">
+                        <table class="packs-table">
+                            <thead>
+                                <tr>
+                                    <th style="text-align: left;">Avantages - Visibilité</th>
+                                    <th class="center">🥉 Bronze<br><span style="font-size: 0.9rem; font-weight: 600;">2 000 TND</span></th>
+                                    <th class="center">🥈 Silver<br><span style="font-size: 0.9rem; font-weight: 600;">4 000 TND</span></th>
+                                    <th class="center">🏆 Gold<br><span style="font-size: 0.9rem; font-weight: 600;">6 000 TND</span></th>
+                                    <th class="center">👑 Exclusif<br><span style="font-size: 0.9rem; font-weight: 600;">20 000 TND</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Logo sur site web officiel</td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Logo sur réseaux sociaux</td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Mention dans les publications officielles</td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Logo sur supports imprimés (banderoles, roll-ups)</td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Logo sur écran LED - scène</td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Présence sur tous les supports de communication</td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Mise en place d'un stand</td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Distribution de goodies - flyers</td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Interaction directe avec participants</td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Mot lors de la cérémonie d'ouverture et de clôture</td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Développement d'une solution dédiée pour le sponsor</td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-times"></i></td>
+                                    <td class="center"><i class="fas fa-check"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <a href="#contact" style="text-decoration: none;">
+                            <button style="background: var(--gradient-primary); color: white; padding: 1rem 2rem; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; width: 100%;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 24px rgba(26, 35, 126, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                <i class="fas fa-handshake" style="margin-right: 0.5rem;"></i> Devenir sponsor
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Dossier PDF Section -->
-    <section id="dossier" class="dossier-section">
+    <!-- Budget Section -->
+    <section id="budgets" style="background: white;">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Document officiel</span>
-                <h2 class="section-title">Dossier de sponsoring (PDF)</h2>
-                <p class="section-description">
-                    Retrouvez l’intégralité du dossier : présentation, audience, budgets, packs et avantages.
+            <div class="section-header">
+                <span class="section-tag">Budget</span>
+                <h2 class="section-title">Budgets de l'Événement</h2>
+                <p style="color: var(--gray); max-width: 700px; margin: 0 auto;">
+                    Transparence totale sur l'utilisation des fonds
                 </p>
             </div>
 
-            <div class="dossier-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="dossier-left">
-                    <i class="fas fa-file-pdf"></i>
-                    <div>
-                        <h3>I HE C Code-Lab - Dossier complet</h3>
-                        <p class="muted">Ouvrir / télécharger : IHEC-Code-lab.pdf</p>
+            <div class="budget-accordion">
+                <!-- Food Budget -->
+                <div class="budget-item">
+                    <div class="budget-header" onclick="toggleBudget('food')">
+                        <div class="budget-header-left">
+                            <div class="budget-icon food">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 0.25rem;">Budget Nourriture & Boissons</h3>
+                                <p style="color: var(--gray); margin: 0; font-size: 0.9rem;">Repas complets pour tous les participants</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span class="budget-total">3 360 TND</span>
+                            <i class="fas fa-chevron-down" id="food-icon"></i>
+                        </div>
+                    </div>
+                    <div class="budget-content" id="food-content">
+                        <table class="budget-table">
+                            <thead>
+                                <tr>
+                                    <th>Élément</th>
+                                    <th>Quantité</th>
+                                    <th>Prix unitaire</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Déjeuner (sandwich)</td>
+                                    <td>150</td>
+                                    <td>8 TND</td>
+                                    <td><strong>1 200 TND</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Dîner (sandwich)</td>
+                                    <td>150</td>
+                                    <td>8 TND</td>
+                                    <td><strong>1 200 TND</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Petit-déjeuner</td>
+                                    <td>150</td>
+                                    <td>4 TND</td>
+                                    <td><strong>600 TND</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Eau minérale (0,5L)</td>
+                                    <td>300</td>
+                                    <td>0,6 TND</td>
+                                    <td><strong>180 TND</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Boissons gazeuses</td>
+                                    <td>150</td>
+                                    <td>1,2 TND</td>
+                                    <td><strong>180 TND</strong></td>
+                                </tr>
+                                <tr style="background: rgba(255, 152, 0, 0.1); font-weight: 700;">
+                                    <td colspan="3">Total</td>
+                                    <td>3 360 TND</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="dossier-actions">
-                    <a class="btn btn-primary" href="IHEC-Code-lab.pdf" target="_blank" rel="noopener">
-                        <i class="fas fa-download"></i>
-                        Ouvrir le PDF
-                    </a>
-                    <a class="btn btn-outline-primary" href="#contact">
-                        <i class="fas fa-envelope"></i>
-                        Demander un rendez-vous
-                    </a>
+
+                <!-- Prizes Budget -->
+                <div class="budget-item">
+                    <div class="budget-header" onclick="toggleBudget('prizes')">
+                        <div class="budget-header-left">
+                            <div class="budget-icon prize">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 0.25rem;">Budget Prix</h3>
+                                <p style="color: var(--gray); margin: 0; font-size: 0.9rem;">Récompenses pour les équipes gagnantes</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span class="budget-total">6 000 TND</span>
+                            <i class="fas fa-chevron-down" id="prizes-icon"></i>
+                        </div>
+                    </div>
+                    <div class="budget-content" id="prizes-content">
+                        <table class="budget-table">
+                            <thead>
+                                <tr>
+                                    <th>Place</th>
+                                    <th>Montant</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>1ère place</strong></td>
+                                    <td><strong>3 000 TND</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2ème place</strong></td>
+                                    <td><strong>2 000 TND</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3ème place</strong></td>
+                                    <td><strong>1 000 TND</strong></td>
+                                </tr>
+                                <tr style="background: rgba(255, 215, 0, 0.1); font-weight: 700;">
+                                    <td>Total</td>
+                                    <td>6 000 TND</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Logistics Budget -->
+                <div class="budget-item">
+                    <div class="budget-header" onclick="toggleBudget('logistics')">
+                        <div class="budget-header-left">
+                            <div class="budget-icon logistics">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <div>
+                                <h3 style="margin-bottom: 0.25rem;">Budget Logistique</h3>
+                                <p style="color: var(--gray); margin: 0; font-size: 0.9rem;">Organisation et équipements techniques</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span class="budget-total">10 640 TND</span>
+                            <i class="fas fa-chevron-down" id="logistics-icon"></i>
+                        </div>
+                    </div>
+                    <div class="budget-content" id="logistics-content">
+                        <table class="budget-table">
+                            <thead>
+                                <tr>
+                                    <th>Catégorie</th>
+                                    <th>Description</th>
+                                    <th>Montant</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Décoration événementielle</strong></td>
+                                    <td>Thématique personnalisable</td>
+                                    <td>2 935 TND</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Logistique & équipements</strong></td>
+                                    <td>Projecteurs LED, écrans, éclairage</td>
+                                    <td>4 148 TND</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Design graphique</strong></td>
+                                    <td>Création visuelle & supports</td>
+                                    <td>821 TND</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Frais opérationnels</strong></td>
+                                    <td>Transport & installation</td>
+                                    <td>500 TND</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TVA (19%)</strong></td>
+                                    <td>Taxes</td>
+                                    <td>1 596 TND</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Timbre fiscal</strong></td>
+                                    <td></td>
+                                    <td>1 TND</td>
+                                </tr>
+                                <tr style="background: rgba(33, 150, 243, 0.1); font-weight: 700;">
+                                    <td colspan="2">Sous-total HT</td>
+                                    <td>8 403 TND</td>
+                                </tr>
+                                <tr style="background: rgba(33, 150, 243, 0.15); font-weight: 700;">
+                                    <td colspan="2">Total TTC estimé</td>
+                                    <td>≈ 10 640 TND</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Budget Summary -->
+            <div class="budget-summary">
+                <h3 style="text-align: center; margin-bottom: 2rem; font-size: 2rem;">Résumé Budgétaire</h3>
+                <div class="budget-summary-grid">
+                    <div>
+                        <div style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.9;">Nourriture & Boissons</div>
+                        <div style="font-size: 2.5rem; font-weight: 800;">3 360 TND</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.9;">Prix</div>
+                        <div style="font-size: 2.5rem; font-weight: 800;">6 000 TND</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.9rem; margin-bottom: 0.5rem; opacity: 0.9;">Logistique</div>
+                        <div style="font-size: 2.5rem; font-weight: 800;">10 640 TND</div>
+                    </div>
+                    <div style="grid-column: 1 / -1; margin-top: 1rem; padding-top: 2rem; border-top: 2px solid rgba(255, 255, 255, 0.3);">
+                        <div style="font-size: 1rem; margin-bottom: 0.5rem; opacity: 0.9;">Budget Total Estimé</div>
+                        <div style="font-size: 3rem; font-weight: 800; color: var(--secondary-color);">≈ 20 000 TND</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section id="benefits" class="benefits">
+    <!-- Benefits Section - Pourquoi Sponsoriser -->
+    <section id="benefits" class="benefits-section blue-section">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
+            <div class="section-header">
                 <span class="section-tag">Avantages</span>
                 <h2 class="section-title">Pourquoi Sponsoriser ?</h2>
             </div>
 
             <div class="benefits-grid">
-                <div class="benefit-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-bullhorn"></i>
                     </div>
@@ -829,7 +915,7 @@
                     <p>Exposition de votre marque auprès de plus de 200 participants et sur tous nos canaux de communication digitaux.</p>
                 </div>
 
-                <div class="benefit-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-user-friends"></i>
                     </div>
@@ -837,7 +923,7 @@
                     <p>Accès direct aux meilleurs profils techniques : développeurs, designers, data scientists, et entrepreneurs.</p>
                 </div>
 
-                <div class="benefit-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-handshake"></i>
                     </div>
@@ -845,7 +931,7 @@
                     <p>Connexion avec d'autres sponsors, partenaires académiques et leaders de l'écosystème tech tunisien.</p>
                 </div>
 
-                <div class="benefit-card" data-aos="flip-left" data-aos-delay="400">
+                <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
@@ -853,7 +939,7 @@
                     <p>Positionnez votre entreprise comme un acteur clé de l'innovation et du développement des jeunes talents.</p>
                 </div>
 
-                <div class="benefit-card" data-aos="flip-left" data-aos-delay="500">
+                <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-lightbulb"></i>
                     </div>
@@ -861,103 +947,93 @@
                     <p>Accès privilégié aux projets innovants et solutions créatives développés durant le hackathon.</p>
                 </div>
 
-                <div class="benefit-card" data-aos="flip-left" data-aos-delay="600">
+                <div class="benefit-card">
                     <div class="benefit-icon">
-                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart" style="font-size: 2.5rem; color: var(--secondary-color);"></i>
                     </div>
-                    <h3>Responsabilité Sociale</h3>
-                    <p>Contribuez à l'éducation et à l'employabilité des jeunes tout en soutenant l'écosystème entrepreneurial.</p>
+                    <h3 style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 1rem;">Responsabilité Sociale</h3>
+                    <p style="color: var(--gray); line-height: 1.8;">Contribuez à l'éducation et à l'employabilité des jeunes tout en soutenant l'écosystème entrepreneurial.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" style="background: white;">
         <div class="container">
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <h2>Devenons Partenaires</h2>
-                    <p>Rejoignez-nous dans cette aventure exceptionnelle et participez à la création de l'avenir technologique de la Tunisie.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>Email</strong>
-                                <a href="mailto:hec.financeacademy@gmail.com">hec.financeacademy@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Lieu</strong>
-                                <p>IHEC Carthage, Tunisie</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-calendar"></i>
-                            <div>
-                                <strong>Date</strong>
-                                <p>31 Janvier 2026</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Devenons Partenaires</h2>
+                <p style="color: var(--gray); max-width: 700px; margin: 0 auto;">
+                    Rejoignez-nous dans cette aventure exceptionnelle
+                </p>
+            </div>
 
-                    <div class="social-links">
-                        <h3>Suivez-nous</h3>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/iheccodelab/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <div class="contact-grid">
+                <div>
+                    <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+                        <h3 style="margin-bottom: 1rem;"><i class="fas fa-calendar" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Date</h3>
+                        <p>31 Janvier - 01 Février 2026</p>
+                    </div>
+                    <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+                        <h3 style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Lieu</h3>
+                        <p>IHEC Carthage, Tunisie</p>
+                    </div>
+                    <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);">
+                        <h3 style="margin-bottom: 1rem;"><i class="fas fa-envelope" style="color: var(--primary-color); margin-right: 0.5rem;"></i> Contact</h3>
+                        <p style="margin-bottom: 1rem;">
+                            <a href="mailto:hec.financeacademy@gmail.com" style="color: var(--accent-blue);">hec.financeacademy@gmail.com</a>
+                        </p>
+                        <div style="display: flex; gap: 0.75rem;">
+                            <a href="https://www.facebook.com/" target="_blank" style="width: 40px; height: 40px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/iheccodelab/" target="_blank" style="width: 40px; height: 40px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="contact-form-container" data-aos="fade-left">
-                    <form id="contactForm" class="contact-form">
-                        <h3>Demande d'Information</h3>
-                        
+                <div style="background: var(--white); padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Demande d'Information</h3>
+                    <form id="contactForm">
                         <div class="form-group">
-                            <label for="company">Nom de l'Entreprise *</label>
-                            <input type="text" id="company" name="company" required>
+                            <label>Nom de l'entreprise *</label>
+                            <input type="text" required>
                         </div>
-
-                        <div class="form-row">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                             <div class="form-group">
-                                <label for="name">Nom Complet *</label>
-                                <input type="text" id="name" name="name" required>
+                                <label>Nom complet *</label>
+                                <input type="text" required>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Téléphone *</label>
-                                <input type="tel" id="phone" name="phone" required>
+                                <label>Téléphone *</label>
+                                <input type="tel" required>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
+                            <label>Email *</label>
+                            <input type="email" required>
                         </div>
-
                         <div class="form-group">
-                            <label for="package">Package Souhaité *</label>
-                            <select id="package" name="package" required>
+                            <label>Package souhaité *</label>
+                            <select required>
                                 <option value="">Sélectionnez un package</option>
-                                <option value="bronze">Bronze - 500 TND</option>
-                                <option value="silver">Silver - 1000 TND</option>
-                                <option value="gold">Gold - 2000 TND</option>
-                                <option value="platinum">Platinum - 3500 TND</option>
-                                <option value="custom">Package Sur Mesure</option>
+                                <option>Pack Bronze - 2 000 TND</option>
+                                <option>Pack Silver - 4 000 TND</option>
+                                <option>Pack Gold - 6 000 TND</option>
+                                <option>Pack Exclusif - 20 000 TND</option>
+                                <option>Package sur mesure</option>
                             </select>
                         </div>
-
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Parlez-nous de vos objectifs et attentes..."></textarea>
+                            <label>Message</label>
+                            <textarea rows="4" placeholder="Parlez-nous de vos objectifs..."></textarea>
                         </div>
-
-                        <button type="submit" class="btn btn-primary btn-submit">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
                             <i class="fas fa-paper-plane"></i>
-                            Envoyer la Demande
+                            Envoyer la demande
                         </button>
                     </form>
                 </div>
@@ -965,89 +1041,100 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Previous Sponsors -->
+    <section id="sponsors" style="background: var(--white); padding: 3rem 0;">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3><i class="fas fa-code"></i> IHEC Code-Lab</h3>
-                    <p>L'événement tech de référence à l'IHEC Carthage</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/iheccodelab/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">Ils nous ont fait confiance</h2>
+                <p style="color: var(--gray);">Nos partenaires des éditions précédentes</p>
+            </div>
+            <div class="sponsors-grid">
+                <div class="sponsor-box"><img src="image/sponsors/image.png" alt="sponsors"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--primary-dark); color: var(--white); padding: 3rem 0 1rem;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 2rem;">
+                <div>
+                    <h3 style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-code" style="color: var(--secondary-color);"></i>
+                        IHEC Code-Lab
+                    </h3>
+                    <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6; margin-bottom: 1rem;">
+                        L'événement tech de référence à l'IHEC Carthage
+                    </p>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <a href="https://www.facebook.com/" target="_blank" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border-radius: 50%; transition: all 0.3s ease; color: white;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/iheccodelab/" target="_blank" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); border-radius: 50%; transition: all 0.3s ease; color: white;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="footer-section">
-                    <h4>Liens Rapides</h4>
-                    <ul>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#packages">Packages</a></li>
-                        <li><a href="#stats">Impact</a></li>
-                        <li><a href="#aftermovie">After movie</a></li>
-                        <li><a href="#budgets">Budgets</a></li>
-                        <li><a href="#dossier">Dossier PDF</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                <div>
+                    <h4 style="font-family: 'Poppins', sans-serif; font-size: 1.2rem; margin-bottom: 1rem;">Liens Rapides</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.75rem;"><a href="#about" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">À propos</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#stats" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">Public & Promo</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#packages" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">Packages</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#budgets" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">Budgets</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#benefits" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">Avantages</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#contact" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> hec.financeacademy@gmail.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> IHEC Carthage</li>
-                        <li><i class="fas fa-calendar"></i> 31 Janvier 2026</li>
+                <div>
+                    <h4 style="font-family: 'Poppins', sans-serif; font-size: 1.2rem; margin-bottom: 1rem;">Informations</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.75rem; color: rgba(255, 255, 255, 0.7);"><i class="fas fa-envelope" style="color: var(--secondary-color); margin-right: 0.5rem;"></i>hec.financeacademy@gmail.com</li>
+                        <li style="margin-bottom: 0.75rem; color: rgba(255, 255, 255, 0.7);"><i class="fas fa-map-marker-alt" style="color: var(--secondary-color); margin-right: 0.5rem;"></i>IHEC Carthage</li>
+                        <li style="color: rgba(255, 255, 255, 0.7);"><i class="fas fa-calendar" style="color: var(--secondary-color); margin-right: 0.5rem;"></i>31 Janvier 2026</li>
                     </ul>
                 </div>
 
-                <div class="footer-section">
-                    <h4>Newsletter</h4>
-                    <p>Restez informé de nos actualités</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Votre email">
-                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                <div>
+                    <h4 style="font-family: 'Poppins', sans-serif; font-size: 1.2rem; margin-bottom: 1rem;">Newsletter</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1rem;">Restez informé de nos actualités</p>
+                    <form style="display: flex; gap: 0.5rem;">
+                        <input type="email" placeholder="Votre email" style="flex: 1; padding: 0.75rem 1rem; border: none; border-radius: var(--radius-sm); font-family: inherit;">
+                        <button type="submit" style="padding: 0.75rem 1.25rem; background: var(--secondary-color); color: var(--primary-dark); border-radius: var(--radius-sm); font-weight: 700; transition: all 0.3s ease; border: none; cursor: pointer;">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </form>
                 </div>
             </div>
 
-            <div class="footer-bottom">
+            <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.6);">
                 <p>&copy; 2026 IHEC Code-Lab. Tous droits réservés. | Organisé par HEC Finance Academy</p>
             </div>
         </div>
     </footer>
 
-    <!-- Modal Contact -->
-    <div id="contactModal" class="modal">
-        <div class="modal-content" data-aos="zoom-in">
-            <span class="close-modal">&times;</span>
-            <h2>Demande de Sponsoring</h2>
-            <p id="modalPackageName"></p>
-            <form id="modalContactForm">
-                <input type="hidden" id="modalPackage">
-                <div class="form-group">
-                    <input type="text" placeholder="Nom de l'entreprise *" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="Votre nom *" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Email *" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Téléphone *" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Message" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Scroll to Top Button -->
-    <button id="scrollTopBtn" class="scroll-top">
+    <!-- Scroll Top Button -->
+    <button class="scroll-top" id="scrollTopBtn">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Package Modal -->
+    <div class="modal" id="packageModal">
+        <div class="modal-content">
+            <div class="modal-header" id="modalHeader">
+                <button class="close-modal" onclick="closePackageModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h2 id="modalTitle">Pack Bronze</h2>
+                <p id="modalPrice" style="font-size: 2rem; font-weight: 800; margin: 0;">2 000 TND</p>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
 
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>

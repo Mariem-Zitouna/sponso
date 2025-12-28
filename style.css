@@ -240,7 +240,7 @@ body {
 
 @keyframes glow {
     0%, 100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
-    50% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
+    0% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
 }
 
 @keyframes slide-in-up {
@@ -1023,17 +1023,44 @@ section {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
+}
+
+.pkg-more-features ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .pkg-more-features.active {
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .pkg-more-features li {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Highlighted Exclusive Feature - Text Glow Only */
+.highlight-exclusive {
+    font-weight: 600;
+}
+
+.highlight-exclusive,
+.highlight-exclusive i {
+    color: #ff8c00;
+    text-shadow: 0 0 8px rgba(255, 140, 0, 0.4),
+                 0 0 12px rgba(255, 140, 0, 0.2);
+    animation: text-glow-pulse 3s ease-in-out infinite;
+}
+
+@keyframes text-glow-pulse {
+    0%, 100% {
+        text-shadow: 0 0 8px rgba(255, 140, 0, 0.3),
+                     0 0 12px rgba(255, 140, 0, 0.15);
+    }
+    50% {
+        text-shadow: 0 0 12px rgba(255, 140, 0, 0.5),
+                     0 0 18px rgba(255, 140, 0, 0.25);
+    }
 }
 
 /* Voir Plus Button */

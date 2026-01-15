@@ -38,12 +38,13 @@
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Accueil</a></li>
-                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#about" class="nav-link" style="color: #f2f2f2; text-shadow: 0 0 20px rgba(251, 228, 171, 0.6), 0 0 10px rgba(224, 216, 197, 0.4); font-weight: 600;">À propos </a></li>
                 <li><a href="#stats" class="nav-link">Public & Promotion</a></li>
                 <li><a href="#media" class="nav-link">Recap de la 1ère édition</a></li>
-                <li><a href="#packages" class="nav-link">Packages</a></li>
+                <li><a href="#packages" class="nav-link" style="color: #f2f2f2; text-shadow: 0 0 20px rgba(251, 228, 171, 0.6), 0 0 10px rgba(224, 216, 197, 0.4); font-weight: 600;">Packages</a></li>
                 <li><a href="#budgets" class="nav-link">Budgets</a></li>
                 <li><a href="#benefits" class="nav-link">Avantages</a></li>
+                <li><a href="#rse" class="nav-link" style="color: #f2f2f2; text-shadow: 0 0 20px rgba(251, 228, 171, 0.6), 0 0 10px rgba(224, 216, 197, 0.4); font-weight: 600;">RSE</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li><a href="#contact" class="nav-link btn-sponsor"><i class="fas fa-handshake"></i> Devenir sponsor</a></li>
             </ul>
@@ -560,12 +561,13 @@
                     </div>
                     <div class="pkg-card-body">
                         <ul class="pkg-preview-list">
+                             <li style="color: #f82121; text-shadow: 0 0 20px rgba(223, 151, 151, 0.533);font-weight: 700;  padding: 0.5rem 0; margin-bottom: 1rem;"><i class="fas fa-check" style="color:#4caf50;"></i> Développement d'une solution dédiée pour le sponsor</li>
                             <li class="included"><i class="fas fa-check"></i> Logo sur site web officiel</li>
                             <li class="included"><i class="fas fa-check"></i> Logo sur réseaux sociaux</li>
-                            <li class="included"><i class="fas fa-check"></i> Mention dans les publications officielles</li>
                         </ul>
                         <div class="pkg-more-features" id="more-exclusive">
                             <ul>
+                                <li class="included"><i class="fas fa-check"></i> Mention dans les publications officielles</li>
                                 <li class="included"><i class="fas fa-check"></i> Logo sur supports imprimés (banderoles, roll-ups)</li>
                                 <li class="included"><i class="fas fa-check"></i> Logo sur écran LED - scène</li>
                                 <li class="included"><i class="fas fa-check"></i> Présence sur tous les supports de communication</li>
@@ -574,7 +576,6 @@
                                 <li class="included"><i class="fas fa-check"></i> Interaction directe avec participants</li>
                                 <li class="included"><i class="fas fa-check"></i> Vidéo de remerciement</li>
                                 <li class="included"><i class="fas fa-check"></i> Mot lors de la cérémonie d'ouverture et de clôture</li>
-                                <li class="included highlight-exclusive"><i class="fas fa-check"></i> Développement d'une solution dédiée pour le sponsor</li>
                             </ul>
                         </div>
                         <button class="pkg-voir-plus-btn" onclick="toggleMoreFeatures('exclusive')">
@@ -936,56 +937,71 @@
             <div class="section-header">
                 <span class="section-tag">Avantages</span>
                 <h2 class="section-title">Pourquoi Sponsoriser ?</h2>
+                <p style="color: rgba(255, 255, 255, 0.8); max-width: 700px; margin: 1rem auto 0;">
+                    Des opportunités uniques pour votre entreprise et votre marque
+                </p>
             </div>
 
             <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-bullhorn"></i>
+                <div class="benefit-card" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(255, 215, 0, 0.3)'; this.style.borderColor='rgba(255, 215, 0, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.2)'">
+                    <div class="benefit-icon" style="background: linear-gradient(135deg, #ffd700, #ffed4e); box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);">
+                        <i class="fas fa-bullhorn" style="font-size: 2.5rem; color: #1a237e;"></i>
                     </div>
-                    <h3>Visibilité Maximale</h3>
-                    <p>Exposition de votre marque auprès de plus de 200 participants et sur tous nos canaux de communication digitaux.</p>
+                    <h3 style="color: white; font-size: 1.4rem; margin: 1.5rem 0 1rem;">Visibilité Maximale</h3>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7;">Exposition de votre marque auprès de plus de 200 participants et sur tous nos canaux de communication digitaux.</p>
                 </div>
 
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-user-friends"></i>
+                <div class="benefit-card" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(33, 150, 243, 0.3)'; this.style.borderColor='rgba(33, 150, 243, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.2)'">
+                    <div class="benefit-icon" style="background: linear-gradient(135deg, #2196F3, #42A5F5); box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);">
+                        <i class="fas fa-user-friends" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3>Recrutement de Talents</h3>
-                    <p>Accès direct aux meilleurs profils techniques : développeurs, designers, data scientists, et entrepreneurs.</p>
+                    <h3 style="color: white; font-size: 1.4rem; margin: 1.5rem 0 1rem;">Recrutement de Talents</h3>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7;">Accès direct aux meilleurs profils techniques : développeurs, designers, data scientists, et entrepreneurs.</p>
                 </div>
 
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-handshake"></i>
+                <div class="benefit-card" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(156, 39, 176, 0.3)'; this.style.borderColor='rgba(156, 39, 176, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.2)'">
+                    <div class="benefit-icon" style="background: linear-gradient(135deg, #9C27B0, #BA68C8); box-shadow: 0 8px 20px rgba(156, 39, 176, 0.4);">
+                        <i class="fas fa-handshake" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3>Networking Premium</h3>
-                    <p>Connexion avec d'autres sponsors, partenaires académiques et leaders de l'écosystème tech tunisien.</p>
+                    <h3 style="color: white; font-size: 1.4rem; margin: 1.5rem 0 1rem;">Networking Premium</h3>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7;">Connexion avec d'autres sponsors, partenaires académiques et leaders de l'écosystème tech tunisien.</p>
                 </div>
 
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-line"></i>
+                <div class="benefit-card" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(76, 175, 80, 0.3)'; this.style.borderColor='rgba(76, 175, 80, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.2)'">
+                    <div class="benefit-icon" style="background: linear-gradient(135deg, #4CAF50, #66BB6A); box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);">
+                        <i class="fas fa-chart-line" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3>Image Innovante</h3>
-                    <p>Positionnez votre entreprise comme un acteur clé de l'innovation et du développement des jeunes talents.</p>
+                    <h3 style="color: white; font-size: 1.4rem; margin: 1.5rem 0 1rem;">Image Innovante</h3>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7;">Positionnez votre entreprise comme un acteur clé de l'innovation et du développement des jeunes talents.</p>
                 </div>
 
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-lightbulb"></i>
+                <div class="benefit-card" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(255, 152, 0, 0.3)'; this.style.borderColor='rgba(255, 152, 0, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.2)'">
+                    <div class="benefit-icon" style="background: linear-gradient(135deg, #FF9800, #FFB74D); box-shadow: 0 8px 20px rgba(255, 152, 0, 0.4);">
+                        <i class="fas fa-lightbulb" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3>Découverte d'Innovations</h3>
-                    <p>Accès privilégié aux projets innovants et solutions créatives développés durant le hackathon.</p>
+                    <h3 style="color: white; font-size: 1.4rem; margin: 1.5rem 0 1rem;">Découverte d'Innovations</h3>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7;">Accès privilégié aux projets innovants et solutions créatives développés durant le hackathon.</p>
                 </div>
 
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-heart" style="font-size: 2.5rem; color: var(--secondary-color);"></i>
+                <div class="benefit-card" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(244, 67, 54, 0.3)'; this.style.borderColor='rgba(244, 67, 54, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(0, 0, 0, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.2)'">
+                    <div class="benefit-icon" style="background: linear-gradient(135deg, #F44336, #EF5350); box-shadow: 0 8px 20px rgba(244, 67, 54, 0.4);">
+                        <i class="fas fa-heart" style="font-size: 2.5rem; color: white;"></i>
                     </div>
-                    <h3 style="font-family: 'Poppins', sans-serif; font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 1rem;">Responsabilité Sociale</h3>
-                    <p style="color: var(--gray); line-height: 1.8;">Contribuez à l'éducation et à l'employabilité des jeunes tout en soutenant l'écosystème entrepreneurial.</p>
+                    <h3 style="color: white; font-size: 1.4rem; margin: 1.5rem 0 1rem;">Responsabilité Sociale</h3>
+                    <p style="color: rgba(255, 255, 255, 0.85); line-height: 1.7;">Contribuez à l'éducation et à l'employabilité des jeunes tout en soutenant l'écosystème entrepreneurial.</p>
                 </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div style="margin-top: 4rem; text-align: center; padding: 3rem; background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05)); border-radius: 20px; border: 2px solid rgba(255, 215, 0, 0.3);">
+                <h3 style="color: white; font-size: 2rem; margin-bottom: 1rem; font-weight: 700;">Prêt à faire partie de l'aventure ?</h3>
+                <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Rejoignez-nous et bénéficiez d'une visibilité exceptionnelle auprès des futurs talents tech de la Tunisie
+                </p>
+                <a href="#contact" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1.25rem 3rem; background: linear-gradient(135deg, #ffd700, #ffed4e); color: #1a237e; font-size: 1.1rem; font-weight: 700; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);" onmouseover="this.style.transform='translateY(-3px) scale(1.05)'; this.style.boxShadow='0 12px 35px rgba(255, 215, 0, 0.6)'" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 8px 25px rgba(255, 215, 0, 0.4)'">
+                    <i class="fas fa-handshake" style="font-size: 1.3rem;"></i>
+                    Devenir Sponsor Maintenant
+                </a>
             </div>
         </div>
     </section>
@@ -998,6 +1014,28 @@
             </div>
             <div class="sponsors-grid">
                 <div class="sponsor-box"><img src="image/sponsors/image.png" alt="sponsors"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSE Section -->
+    <section id="rse" class="rse-section blue-section" style="position: relative;">
+        <div id="particles-rse" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="section-header">
+                <span class="section-tag">RSE</span>
+                <h2 class="section-title">Responsabilité Sociétale & Engagement Environnemental</h2>
+                <p style="color: rgba(255, 255, 255, 0.8); max-width: 800px; margin: 1rem auto 0;">
+                    Une innovation responsable au service du développement durable
+                </p>
+            </div>
+
+            <div class="rse-content" style="color: rgba(255, 255, 255, 0.9); line-height: 1.8; font-size: 1.05rem;">
+                <p style="margin-bottom: 1.5rem;">Conscient des enjeux environnementaux liés à l'essor des nouvelles technologies, <strong style="color: #d4a017; text-shadow: 0 0 20px rgba(212, 160, 23, 0.6), 0 0 10px rgba(212, 160, 23, 0.4); font-weight: 600;">HEC Finance Academy</strong> place la Responsabilité Sociétale des Entreprises (RSE) au cœur de ses initiatives. L'association défend une vision de l'innovation où la performance technologique s'accompagne d'une réflexion éthique et environnementale, en particulier autour de l'impact réel de <span style="color: #f2f2f2;text-shadow: 0 0 20px rgba(251, 228, 171, 0.6), 0 0 10px rgba(224, 216, 197, 0.4); font-weight: 600;">l'intelligence artificielle</span>.</p>
+                
+                <p style="margin-bottom: 1.5rem;">Si l'IA représente un levier majeur de transformation, son utilisation implique une <span style="color: #4CAF50; font-weight: 600;">consommation importante de ressources</span>, notamment en énergie et en eau à travers les infrastructures numériques. Face à cette réalité, il devient essentiel de sensibiliser les futurs développeurs, ingénieurs et décideurs à une <span style="color: #4CAF50; font-weight: 600;">utilisation responsable, raisonnée et durable</span> de ces technologies.</p>
+                
+                <p style="margin-bottom: 0;">Le <span style="color: #d43061; text-shadow: 0 0 20px rgba(217, 63, 189, 0.6), 0 0 10px rgba(245, 218, 232, 0.4); font-weight: 600;;">HEC CODE LAB Hackathon</span> s'inscrit pleinement dans cette démarche RSE. Plus qu'un événement technologique, il constitue une <span style="color: #4CAF50; font-weight: 600;">plateforme de sensibilisation et d'engagement</span>, invitant les participants à concevoir des <span style="color: #4CAF50; font-weight: 600;">solutions innovantes</span> tout en intégrant les enjeux environnementaux et sociétaux dès la phase de conception. À travers cet engagement, les entreprises partenaires ont l'opportunité de soutenir une initiative à fort impact, contribuant à former une <span style="color: #4CAF50; font-weight: 600;">nouvelle génération de talents conscients, responsables</span> et alignés avec les défis de la <span style="color: #4CAF50; font-weight: 600;">transition durable</span>.</p>
             </div>
         </div>
     </section>
@@ -1118,6 +1156,7 @@
                         <li style="margin-bottom: 0.75rem;"><a href="#packages" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">Packages</a></li>
                         <li style="margin-bottom: 0.75rem;"><a href="#budgets" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">Budgets</a></li>
                         <li style="margin-bottom: 0.75rem;"><a href="#benefits" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">Avantages</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#rse" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">RSE</a></li>
                         <li style="margin-bottom: 0.75rem;"><a href="#contact" style="color: rgba(255, 255, 255, 0.7); transition: all 0.3s ease;">Contact</a></li>
                     </ul>
                 </div>

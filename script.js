@@ -479,6 +479,7 @@ if (typeof particlesJS !== 'undefined') {
     particlesJS('particles-stats', particlesConfig);
     particlesJS('particles-packages', particlesConfig);
     particlesJS('particles-benefits', particlesConfig);
+    particlesJS('particles-rse', particlesConfig);
 }
 
 // ===== PARALLAX EFFECT ON HERO =====

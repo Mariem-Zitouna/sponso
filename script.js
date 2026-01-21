@@ -368,12 +368,12 @@ if (contactForm) {
     document.body.appendChild(script);
 
     script.onload = () => {
-        emailjs.init('9AeH_n2t6Pz9or1Fz'); // <-- remplace par ta clé publique
+        emailjs.init('JoFE_i3HTclvNYerV'); // <-- remplace par ta clé publique
 
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            emailjs.sendForm('service_1lptt4s', 'template_ysv0fwx', this)
+            emailjs.sendForm('service_kyp52bc', 'template_k5tvoch', this)
                 .then(() => {
                     alert('Merci pour votre demande ! Nous vous contacterons bientôt.');
                     this.reset();
